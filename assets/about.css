@@ -4,7 +4,6 @@ body {
     height: 100vh;
     width: 100vw;
     font-family: 'Montserrat', sans-serif;
-    animation: fadeIn 2.5s ease-in 0s;
 }
 
 img { max-width: 100%; }
@@ -73,7 +72,8 @@ h2 { font-size: 1.8vw; color: #718c6a; }
 #title-about {
     list-style: none;
     padding: 0;
-    animation: fadeInLeft 2.2s ease-in-out 0s 1;
+    margin: 0;
+    animation: fadeInDown 2.2s ease-in-out 0s 1;
 }
 
 #title-about h2 {
@@ -88,15 +88,15 @@ h2 { font-size: 1.8vw; color: #718c6a; }
     color: #718c6a;
 }
 
-li #title-about {
-    display: inline-block;
+#text-about {
+    animation: fadeInDown 2.2s ease-in-out 0s 1;
 }
 
 #text-background {
     padding-top: 100px;
     margin: 0;
     top: 0;
-    height: 35vh;
+    height: 25vh;
     background-color: #b0c38d;
     width: 100%;
     display: flex;
@@ -108,7 +108,7 @@ li #title-about {
 
 #carousel-background {
     width: 100%;
-    margin-top: 35vh;
+    margin-top: 40vh;
     display: flex;
     justify-content: center;
 }
@@ -129,8 +129,8 @@ li #title-about {
 
 #carousel {
     overflow: hidden;
-    width: 1270px;
-    height: 402px;
+    width: 970px;
+    height: 302px;
     position: relative;
     border-radius: 10px;
 }
@@ -148,8 +148,8 @@ li #title-about {
 }
 
 .carousel-image img {
-    min-width: 400px;
-    height: 400px;
+    min-width: 300px;
+    height: 300px;
     border-radius: 10px;
     filter: brightness(120%);
 }
@@ -175,4 +175,16 @@ li #title-about {
   border: none;
   cursor: pointer;
   outline: none;
+}
+
+@keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -50%, 0);
+    }
+  
+    75%, 100% {
+      opacity: 1;
+      transform: none;
+    }
 }

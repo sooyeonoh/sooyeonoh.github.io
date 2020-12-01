@@ -1,4 +1,4 @@
-let carouselWidth = 420; 
+let carouselWidth = 320; 
 
 let prevButton = document.getElementById("button-previous");
 let nextButton = document.getElementById("button-next");
