@@ -108,7 +108,7 @@ li #title-about {
 
 #carousel-background {
     width: 100%;
-    margin-top: 400px;
+    margin-top: 35vh;
     display: flex;
     justify-content: center;
 }
