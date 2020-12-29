@@ -7,38 +7,115 @@
 
 </head>
 
-<body id="home" style="background-image: url('assets/img/background.png'); background-size: cover;">
+<body id="home" style='background-color: #ffebdb;'>
     <header id="nav">
-
         <ul class="nav_links">
-            <li><a href="home.html">HOME</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">PROJECTS</a></li>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="index.html">CONTACT</a></li>
         </ul>
-
     </header>
 
-    <div class="main-home">
+    <main class="wrapper">
+        <section class="section parallax home" data-type="background">
+            <div id="me-home"> <img src="assets/img/portrait.png"> </div>
+            <img src="assets/img/blob2.png" id="blob2">
+            <img src="assets/img/blob3.png" id="blob3">
+            <div id="text-home">
+                <ul id="title-home">
+                    <li><h1 id="left-bracket-red">&lt;&nbsp;</h1></li>
+                    <li><h1 id="title-red">HELLO</h1></li>
+                    <li><h1 id="right-bracket-red">&nbsp;&gt;</h1></li>
+                    <br>
+                    <li><h1>I'm Sooyeon.</h1></li>
+                </ul>
+                <p>Full-time CS student at UC Berkeley. Part-time programmer, designer, and aspiring chef.</p>
+            </div>
 
-        <div id="me-home">
-            <img src="assets/img/portrait.png">
-        </div>
+            <div id="down-btn">
+                <button id="carrot" type="button"><img src="assets/img/carrot.png"></button>
+            </div>
+        </section>
 
-        <div class="text-home">
+        <section class="section static projects" data-type="background">
+            <div class="title-projects">
+                <li><p>PROJECTS</p></li>
+                <br>
+                <li><h2 id="title">This is&nbsp;</h2></li>
+                <li><h2 id="left-bracket-red">&lt;&nbsp;</h2></li>
+                <li><h2 id="title-red">WHAT</h2></li>
+                <li><h2 id="right-bracket-red">&nbsp;&gt;</h2></li>
+                <li><h2 id="title">&nbsp;I do.</h2></li>
+            </div>
+            <img src="assets/img/blob4.png" id="blob4">
+            <div id="cards">
+                <div class="card dungeon">
+                    <img src="assets/img/cards/dungeon.png" class="card-img">
+                    <a href="https://gitlab.com/sooyeonoh/worldgeneration" target="_blank">
+                        <h3>Dungeon Escape</h3>
+                        <div class="card-text-container">
+                            <p>I designed and developed a 2D tile-based dungeon exploration game with randomly generated 
+                                rooms and hallways. Features include keyboard interaction, save and load feature, and an 
+                                interactive heads up display. </p>
+                        </div> 
+                    </a>
+                </div>
+                <div class="card maps">
+                    <img src="assets/img/cards/maps.png" class="card-img">
+                    <a href="https://gitlab.com/sooyeonoh/bearmaps" target="_blank">
+                        <h3>Bear Maps</h3>
+                        <div class="card-text-container">
+                            <p>This project was inspired by Google Maps. I developed the backend of a street mapping application 
+                                for the Berkeley area. Components include map rastering, converting query requests to bit-mapped 
+                                pixel-by-pixel images, routing, and location lookup with prefix matching search. </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card nbody">
+                    <img src="assets/img/cards/nbody.png" class="card-img">
+                    <a href="https://github.com/Berkeley-CS61B-Student/fa20-s515/tree/master/proj0" target="_blank">
+                        <h3>NBody Simulation</h3>
+                        <div class="card-text-container">
+                            <p>This project simulates the motion of N objects on a plane. It draws an animation of bodies floating 
+                                and tugging on each other with the power of gravity as demonstrated by Newton’s Law of Universal Gravitation.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card scheme">
+                    <img src="assets/img/cards/scheme.png" class="card-img">
+                    <a href="https://gitlab.com/sooyeonoh/cs61a" target="_blank">
+                        <h3>Scheme Interpreter</h3>      
+                        <div class="card-text-container">
+                            <p>Many quirks of languages are byproducts of implementation decisions in interpreters and compilers. 
+                            Here, I developed an interpreter for a subset of the Scheme language.</p>
+                        </div>  
+                    </a>
+                </div>
+                <div class="card ants">
+                    <img src="assets/img/cards/ants.png" class="card-img">
+                    <a href="https://gitlab.com/sooyeonoh/cs61a" target="_blank">
+                        <h3>Ants VS. Bees</h3>
+                        <div class="card-text-container">
+                            <p>I created a tower defense game inspired by PopCap Games’ Plants Vs. Zombies. The ant colony is 
+                                populated by ants that protects the queen ant from evil bees by throwing leaves at them.</p>
+                        </div> 
+                    </a>                
+                </div>
+            </div>
+    </section>
 
-            <ul id="title-home">
-                <li><h1 id="left-bracket-red">&lt;&nbsp;</h1></li>
-                <li><h1> Hi, I'm Sooyeon. </h1></li>
-                <li><h1 id="right-bracket-red">&nbsp;&gt;</h1></li>
-            </ul>
-
-            <p>I really like donuts and kit kats.</p>
-        
-        </div>
-
-        <div id="down-btn">
-            <button id="carrot" type="button"><img src="assets/img/carrot.png"></button>
-        </div>
-
-    </div>
+        <section class="section parallax about" data-type="background">
+            <div class="title-about">
+                <li><p>ABOUT</p></li>
+                <br>
+                <li><h2 id="title">This is&nbsp;</h2></li>
+                <li><h2 id="left-bracket-red">&lt;&nbsp;</h2></li>
+                <li><h2 id="title-red">WHO</h2></li>
+                <li><h2 id="right-bracket-red">&nbsp;&gt;</h2></li>
+                <li><h2 id="title">&nbsp;I am.</h2></li>
+            </div>
+        </section>
+    </main>
+    <script src="assets/script.js"></script>
 </body>
