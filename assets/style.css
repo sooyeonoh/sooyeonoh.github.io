@@ -78,7 +78,7 @@ a { text-decoration: none; color: black; }
     transition: top 0.3s;
 }
 
-#nav #so-logo {
+#nav > img {
     max-width: 50px;
     filter: invert(100%);
 }
