@@ -7,25 +7,27 @@
 
 </head>
 
-<body id="home" style='background-color: #ffebdb;'>
+<body style='background-color: #ffebdb;'>
     <header id="nav">
+        <img id="so-logo" src="assets/img/logo.png">
         <ul class="nav_links">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">PROJECTS</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="index.html">CONTACT</a></li>
+            <li><a href="index.html#home">HOME</a></li>
+            <li><a href="index.html#about">ABOUT</a></li>
+            <li><a href="index.html#projects">PROJECTS</a></li>
+            <li><a href="index.html#contact">CONTACT</a></li>
         </ul>
     </header>
 
     <main class="wrapper">
-        <section class="section parallax home" data-type="background">
-            <div id="me-home"> <img src="assets/img/portrait.png"> </div>
+        <a name='home'></a>
+        <section class="section home" data-type="background">
+            <div id="me-home"><img src="assets/img/portrait.png"></div>
             <img src="assets/img/blob2.png" id="blob2">
             <img src="assets/img/blob3.png" id="blob3">
             <div id="text-home">
                 <ul id="title-home">
                     <li><h1 id="left-bracket-red">&lt;&nbsp;</h1></li>
-                    <li><h1 id="title-red">HELLO</h1></li>
+                    <li><h1 id="title-red">HELLO!</h1></li>
                     <li><h1 id="right-bracket-red">&nbsp;&gt;</h1></li>
                     <br>
                     <li><h1>I'm Sooyeon.</h1></li>
@@ -34,11 +36,97 @@
             </div>
 
             <div id="down-btn">
-                <button id="carrot" type="button"><img src="assets/img/carrot.png"></button>
+                <button id="carrot" type="button"><a href="index.html#about"><img src="assets/img/carrot.png"></a></button>
+            </div>
+            </a>
+        </section>
+
+        <a name='about'></a>
+        <section class="section about" data-type="background">
+            <img src="assets/img/blob8.png" id="blob8">
+            <img src="assets/img/blob7.png" id="blob7">
+            
+            <div class="title-about">
+                <li><p>ABOUT</p></li>
+                <br>
+                <li><h2 id="title">This is&nbsp;</h2></li>
+                <li><h2 id="left-bracket-red">&lt;&nbsp;</h2></li>
+                <li><h2 id="title-red">WHO</h2></li>
+                <li><h2 id="right-bracket-red">&nbsp;&gt;</h2></li>
+                <li><h2 id="title">&nbsp;I am.</h2></li>
+            </div>
+            <div id="content">
+                <div class="card about">
+                    <div class="icon school">
+                        <img src="assets/img/icons/school.png">
+                    </div>
+                    <div class="bcg">
+                        <h3>ENRICH</h3>
+                        <p>Beyond my schoolwork at UC Berkeley, I am currently a</p>
+                        <p class="emphasis">Web Design Developer</p>
+                        <p>at </p>
+                        <a href="https://webatberkeley.org/" target="_blank">Web Development @ Berkeley,</a>
+                        <p> where I lead UI/UX design of client websites and the </p>
+                        <p class="emphasis">Marketing Lead</p>
+                        <p>at </p>
+                        <a href="https://femtechberkeley.com/" target="_blank">FemTech,</a>
+                        <p> an organization for females in the tech field.</p>
+                    </div>
+                    <div style='clear:both;'><!--clear--></div> 
+                </div>
+                <div class="card about">
+                    <div class="icon work">
+                        <img src="assets/img/icons/work.png">
+                    </div>
+                    
+                    <div class="bcg">
+                        <h3>WORK</h3>
+                        <p>I work for my university's</p>
+                        <p class="emphasis"> IT department, </p>
+                        <p>where I perform client-facing work as well as tasks such as device provisioning and 
+                            software troubleshooting. I'm eager to learn and take on future software engineering 
+                            and UI design focused roles.
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="card about">
+                    <div class="icon foodie">
+                        <img src="assets/img/icons/dish.png">
+                    </div>
+                    
+                    <div class="bcg">
+                        <h3>LOVE</h3>
+                        <p>What keeps me going? My love of </p>
+                        <p class="emphasis">delicious, exciting food. </p>
+                        <p>You can find me either in the kitchen cooking up the latest viral cheese dish or surfing 
+                            Yelp for a new restaurant to explore.
+                        </p>
+                        <p class="emphasis">(I love donuts.)</p>
+                    </div>
+                </div>
+                <div class="card about">
+                    <div class="icon web">
+                        <img src="assets/img/icons/web.png">
+                    </div>
+                    
+                    <div class="bcg">
+                        <h3>DREAM</h3>
+                        <p>My next goal: </p>
+                        <p class="emphasis">start a lifestyle blog. </p>
+                        <p>I love sharing what I love with others. To hear my story, from fashion and food to studying and personal finance tips, </p>
+                        <p class="emphasis">stay tuned for launch.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="section static projects" data-type="background">
+        <a name='projects'></a>
+        <section class="section projects" data-type="background">
+           
+            <img src="assets/img/blob4.1.png" id="blob4">
+            <img src="assets/img/blob5.png" id="blob5">
+            <img src="assets/img/blob6.1.png" id="blob6">
             <div class="title-projects">
                 <li><p>PROJECTS</p></li>
                 <br>
@@ -46,9 +134,8 @@
                 <li><h2 id="left-bracket-red">&lt;&nbsp;</h2></li>
                 <li><h2 id="title-red">WHAT</h2></li>
                 <li><h2 id="right-bracket-red">&nbsp;&gt;</h2></li>
-                <li><h2 id="title">&nbsp;I do.</h2></li>
+                <li><h2 id="title">&nbsp;I've done.</h2></li>
             </div>
-            <img src="assets/img/blob4.png" id="blob4">
             <div id="cards">
                 <div class="card dungeon">
                     <img src="assets/img/cards/dungeon.png" class="card-img">
@@ -66,9 +153,9 @@
                     <a href="https://gitlab.com/sooyeonoh/bearmaps" target="_blank">
                         <h3>Bear Maps</h3>
                         <div class="card-text-container">
-                            <p>This project was inspired by Google Maps. I developed the backend of a street mapping application 
-                                for the Berkeley area. Components include map rastering, converting query requests to bit-mapped 
-                                pixel-by-pixel images, routing, and location lookup with prefix matching search. </p>
+                            <p>I developed the backend of a street mapping web app for the Berkeley area inspired by Google Maps. 
+                                Components include rastering, converting query requests to bit-mapped pixel-by-pixel images, 
+                                and location lookup with prefix matching search. </p>
                         </div>
                     </a>
                 </div>
@@ -103,18 +190,35 @@
                     </a>                
                 </div>
             </div>
-    </section>
+        </section>
 
-        <section class="section parallax about" data-type="background">
-            <div class="title-about">
-                <li><p>ABOUT</p></li>
+        <section class="section contact">
+            <div class="title-contact">
+                <li><p>WANT TO TALK?</p></li>
                 <br>
-                <li><h2 id="title">This is&nbsp;</h2></li>
+                <li><h2 id="title">Here's how to&nbsp;</h2></li>
                 <li><h2 id="left-bracket-red">&lt;&nbsp;</h2></li>
-                <li><h2 id="title-red">WHO</h2></li>
+                <li><h2 id="title-red">CONNECT</h2></li>
                 <li><h2 id="right-bracket-red">&nbsp;&gt;</h2></li>
-                <li><h2 id="title">&nbsp;I am.</h2></li>
+                <li><h2 id="title">&nbsp;with me!</h2></li>
             </div>
+            <div id="buttons">
+                <button type="button">
+                    <a href='mailto:sooyeonoh@berkeley.edu' target="_blank"><img src="assets/img/icons/mail.png"></a>
+                </button>
+                <button type="button">
+                    <a href="https://www.linkedin.com/in/sooyeonoh/" target="_blank"><img src="assets/img/icons/linkedin.png"></a>
+                </button>
+                <button type="button">
+                    <a href="https://www.facebook.com/oh.sooyeon" target="_blank"><img src="assets/img/icons/facebook.png"></a>
+                </button>
+            </div>
+        </section>
+        <a name='contact'></a>
+
+        <section class="credits">
+            <p>Website created with HTML/CSS/Javascript. No Bootstrap imports or frameworks.<br>Icons sourced from rivda, Vectorstall,
+            iconixar, Made by Made, Komkrit Noenpoemplsut, and RD Design from Noun Project.</p>
         </section>
     </main>
     <script src="assets/script.js"></script>
