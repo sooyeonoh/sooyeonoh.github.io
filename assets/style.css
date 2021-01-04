@@ -21,6 +21,8 @@ li { display: inline-block; list-style: none; }
 
 a { text-decoration: none; color: black; }
 
+p { font-family: 'Open Sans'; }
+
 #left-bracket-red, #right-bracket-red, #title-red {
     color: var(--red);
 }
@@ -123,6 +125,10 @@ a { text-decoration: none; color: black; }
     filter: invert(100%);
 }
 
+#nav > a li:last-child {
+    font-weight: 500;
+}
+
 #nav > .nav_links {
     list-style: none;
 }
@@ -130,6 +136,7 @@ a { text-decoration: none; color: black; }
 #nav > .nav_links li, .nav_links a {
     padding: 0px 15px 0 15px;
     font-size: 15px;
+    font-weight: 600;
     cursor: pointer;
     position: relative;
 }
@@ -173,6 +180,8 @@ a { text-decoration: none; color: black; }
     overflow: hidden;
 }
 
+.section > a { position: absolute; top: 0; left: 0; }
+
 .wrapper li > p {
     color: var(--blue);
     padding-bottom: 10px;
@@ -181,6 +190,12 @@ a { text-decoration: none; color: black; }
 .blob {
     position: absolute;
     z-index: 0;
+}
+
+.title-about li > p, .title-projects li > p, .title-contact li > p {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
 }
 
 .home {
@@ -314,25 +329,18 @@ a { text-decoration: none; color: black; }
     color: #ffa55a;
 }
 
-.about .card .bcg p {
+.about .card .bcg p, .about .card .bcg a {
     font-family: 'Open Sans';
     font-weight: 400;
-    display: inline;
-}
-
-.about .card .bcg a {
-    font-family: 'Open Sans';
-    font-weight: 400;
-    font-size: 16px;
     display: inline;
     padding: 0;
-    font-style: italic;
 }
 
 .about .card .bcg p.emphasis {
     color: var(--red);
     font-family: 'Montserrat';
     font-size: 16px;
+    font-weight: 500;
 }
 
 .about #content .icon {
@@ -386,21 +394,12 @@ a { text-decoration: none; color: black; }
     top: 0;
     margin-bottom: 4vh;
     display: flex;
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
-    -moz-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
 }
 
 .projects .card {
-    -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
-    -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
-    -ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
     margin: 0.8em;
     max-width: 350px;
     min-height: 160px;
@@ -414,9 +413,6 @@ a { text-decoration: none; color: black; }
 
 .projects .card > a {
     display: flex;
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -449,6 +445,7 @@ a { text-decoration: none; color: black; }
 
 .projects .card > a h3 {
     text-align: center;
+    font-weight: 700;
 }
 
 .projects .card > a .card-text-container p {

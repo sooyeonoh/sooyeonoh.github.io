@@ -6,21 +6,24 @@
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="assets/script.js"></script>
 </head>
 <body style='background-color: #ffebdb;'>
     <header id="nav">
-        <a href="index.html#home"><li><img id="so-logo" src="assets/img/logo.png"></li><li>SOOYEON OH</li></a>
+        <a href="#home"><li><img src="assets/img/logo.png"></li><li>SOOYEON OH</li></a>
         <ul class="nav_links">
-            <li><a href="index.html#about">ABOUT</a></li>
-            <li><a href="index.html#projects">PROJECTS</a></li>
-            <li><a href="index.html#contact">CONTACT</a></li>
+            <li><a href="#about" class="nav-link">ABOUT</a></li>
+            <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+            <li><a href="#contact" class="nav-link">CONTACT</a></li>
         </ul>
     </header>
 
     <main class="wrapper">
-        <a name='home'></a>
         <section class="section home" data-type="background">
+            <a name='home'></a>
             <div id="me-home"><img src="assets/img/portrait.png"></div>
             <img src="assets/img/blob2.png" class="blob two">
             <img src="assets/img/blob3.png" class="blob three">
@@ -41,13 +44,13 @@
             </a>
         </section>
 
-        <a name='about'></a>
         <section class="section about" data-type="background">
+            <a name='about'></a>
             <img src="assets/img/blob8.png" class="blob eight">
             <img src="assets/img/blob7.png" class="blob seven">
             
             <div class="title-about">
-                <li><p>ABOUT</p></li>
+                <li><p>A B O U T</p></li>
                 <br>
                 <li><h2 id="title">This is&nbsp;</h2></li>
                 <li><h2 id="left-bracket-red">&lt;&nbsp;</h2></li>
@@ -121,14 +124,13 @@
             </div>
         </section>
 
-        <a name='projects'></a>
         <section class="section projects" data-type="background">
-           
+            <a name='projects'></a>
             <img src="assets/img/blob4.1.png" class="blob four">
             <img src="assets/img/blob5.png" class="blob five">
             <img src="assets/img/blob6.1.png" class="blob six">
             <div class="title-projects">
-                <li><p>PROJECTS</p></li>
+                <li><p>P R O J E C T S</p></li>
                 <br>
                 <li><h2 id="title">This is&nbsp;</h2></li>
                 <li><h2 id="left-bracket-red">&lt;&nbsp;</h2></li>
@@ -192,6 +194,7 @@
         </section>
 
         <section class="section contact">
+            <a name='contact'></a>
             <div class="title-contact">
                 <li><p>WANT TO TALK?</p></li>
                 <br>
@@ -207,7 +210,6 @@
                 <a href="https://www.facebook.com/oh.sooyeon" target="_blank"><img src="assets/img/icons/facebook.png"></a>
             </div>
         </section>
-        <a name='contact'></a>
 
         <section class="credits">
             <p>Website created with HTML/CSS/Javascript. No Bootstrap imports or frameworks.<br>Icons sourced from rivda, Vectorstall,
