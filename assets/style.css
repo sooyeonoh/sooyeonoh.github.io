@@ -76,10 +76,10 @@ p { font-family: 'Open Sans'; }
 }
 
 @media only screen and (max-device-width : 600px) {
-    h1 { font-size: 30px; }
-    h2 { font-size: 28px; }
-    h3 { font-size: 18px;}
-    p { font-size: 16px; }
+    h1 { font-size: 36px; }
+    h2 { font-size: 32px; }
+    h3 { font-size: 26px;}
+    p { font-size: 20px; }
     .section { padding: 80px 3vw 0 3vw; }
     .home { flex-direction: column-reverse; align-items: center; text-align: center; }
     .home > #me-home { width: 340px; }
