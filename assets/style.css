@@ -68,8 +68,8 @@ p { font-family: 'Open Sans'; }
     p { font-size: 16px; }
     .section { padding: 80px 3vw 0 3vw; }
     .home { flex-direction: column-reverse; align-items: center; }
-    .home > #me-home { width: 380px; }
-    .home #text-home { padding-top: 80px; width: 75%; text-align: center; }
+    .home > #me-home { width: 360px; }
+    .home #text-home { margin-top: 80px; width: 75%; text-align: center; }
     .home button { display: hidden; }
     .about .card { flex-direction: column; }
     .about .card .bcg { width: 100%; }
@@ -83,8 +83,8 @@ p { font-family: 'Open Sans'; }
     p { font-size: 16px; }
     .section { padding: 80px 3vw 0 3vw; }
     .home { flex-direction: column-reverse; align-items: center; text-align: center; }
-    .home > #me-home { width: 340px; }
-    .home #text-home { padding-top: 80px; width: 75%; }
+    .home > #me-home { width: 320px; }
+    .home #text-home { margin-top: 80px; width: 75%; }
     .home button { display: hidden; }
     .about .card { flex-direction: column; }
     .about .card .bcg { width: 100%; }
