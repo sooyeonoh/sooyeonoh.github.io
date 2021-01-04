@@ -58,7 +58,7 @@ a { text-decoration: none; color: black; }
     .about .card .icon { width: 20%; min-height: 150px;}
 }
 
-@media only screen and (min-width : 600px) and (max-width: 768px){
+@media only screen and (min-width : 600px) and (max-width: 768px) {
     h1 { font-size: 30px; }
     h2 { font-size: 28px; }
     h3 { font-size: 18px;}
@@ -73,7 +73,7 @@ a { text-decoration: none; color: black; }
     .about .card .icon { width: 100%; min-height: 80px;}
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-device-width : 600px) {
     h1 { font-size: 30px; }
     h2 { font-size: 28px; }
     h3 { font-size: 18px;}
