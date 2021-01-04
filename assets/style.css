@@ -75,7 +75,7 @@ p { font-family: 'Open Sans'; }
     .about .card .icon { width: 100%; min-height: 80px;}
 }
 
-@media only screen and (max-device-width : 600px) {
+@media screen and (max-device-width : 640px) {
     h1 { font-size: 36px; }
     h2 { font-size: 32px; }
     h3 { font-size: 26px;}
