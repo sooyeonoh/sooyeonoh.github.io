@@ -68,7 +68,7 @@ p { font-family: 'Open Sans'; }
     p { font-size: 16px; }
     .section { padding: 80px 4vw 0 4vw; }
     .home { flex-direction: column-reverse; align-items: center; }
-    .home > #me-home { width: 360px; }
+    .home > #me-home { max-width: 360px; }
     .home #text-home { margin-top: 80px; width: 75%; text-align: center; }
     .home button { display: hidden; }
     .about .card { flex-direction: column; }
@@ -84,7 +84,7 @@ p { font-family: 'Open Sans'; }
     p { font-size: 16px; }
     .section { padding: 80px 4vw 0 4vw; }
     .home { flex-direction: column-reverse; align-items: center; text-align: center; }
-    .home > #me-home { width: 300px; }
+    .home > #me-home { max-width: 300px; }
     .home #text-home { margin-top: 80px; width: 75%; }
     .home button { display: hidden; }
     .about .card { flex-direction: column; }
