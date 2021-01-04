@@ -66,7 +66,7 @@ p { font-family: 'Open Sans'; }
     h2 { font-size: 24px; }
     h3 { font-size: 20px;}
     p { font-size: 16px; }
-    .section { padding: 80px 3vw 0 3vw; }
+    .section { padding: 80px 4vw 0 4vw; }
     .home { flex-direction: column-reverse; align-items: center; }
     .home > #me-home { width: 360px; }
     .home #text-home { margin-top: 80px; width: 75%; text-align: center; }
@@ -74,6 +74,7 @@ p { font-family: 'Open Sans'; }
     .about .card { flex-direction: column; }
     .about .card .bcg { width: 100%; }
     .about .card .icon { width: 100%; min-height: 80px;}
+    .blob { transform: scale(1.5); }
 }
 
 @media screen and (max-device-width : 640px) {
@@ -81,9 +82,9 @@ p { font-family: 'Open Sans'; }
     h2 { font-size: 22px; }
     h3 { font-size: 19px;}
     p { font-size: 16px; }
-    .section { padding: 80px 3vw 0 3vw; }
+    .section { padding: 80px 4vw 0 4vw; }
     .home { flex-direction: column-reverse; align-items: center; text-align: center; }
-    .home > #me-home { width: 320px; }
+    .home > #me-home { width: 300px; }
     .home #text-home { margin-top: 80px; width: 75%; }
     .home button { display: hidden; }
     .about .card { flex-direction: column; }
@@ -379,8 +380,8 @@ p { font-family: 'Open Sans'; }
 
 .projects > .blob.five {
     max-width: 45vw;
-    right: -8%;
-    bottom: -8%;
+    right: -10px;
+    bottom: -23px;
 }
 
 .projects > .blob.six {
