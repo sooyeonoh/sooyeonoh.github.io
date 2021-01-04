@@ -83,15 +83,14 @@ p { font-family: 'Open Sans'; }
     h3 { font-size: 19px;}
     p { font-size: 16px; }
     .section { padding: 80px 4vw 0 4vw; }
-    #nav { max-height: 15vh; }
-    .home { flex-direction: column-reverse; align-items: center; text-align: center; padding-top: 15vh; }
+    #nav { display: none; }
+    .home { flex-direction: column-reverse; align-items: center; text-align: center; }
     .home > #me-home { max-width: 300px; }
     .home #text-home { margin-top: 80px; width: 75%; }
     .home button { display: hidden; }
     .about .card { flex-direction: column; }
     .about .card .bcg { width: 100%; }
     .about .card .icon { width: 100%; min-height: 80px;}
-    
 }
 
 :root {
