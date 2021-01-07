@@ -203,18 +203,18 @@ p { font-family: 'Open Sans'; }
 }
 
 .about .blob.seven {
-    max-width: 100vw;
     min-height: 70vh;
     left: 0;
     bottom: 0;
     opacity: 0.93;
+    object-fit: cover;
 }
 
 .about .blob.eight {
-    max-width: 100vw;
     min-height: 70vh;
     bottom: 7%;
     left: 0;
+    object-fit: cover;
 }
 
 .about .title-about {
