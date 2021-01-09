@@ -114,7 +114,7 @@ header > nav a:active {
 
 #sliding-panel {
     width: 100%;
-    background-color: var(--pink);
+    background-color: var(--lightpink);
     position: absolute;
     height: 250px;
     top: -170px;
@@ -567,7 +567,7 @@ header > nav a:active {
     .section { padding: 80px 4vw 0 4vw; }
     .home { flex-direction: column-reverse; align-items: center; }
     .home > #me-home { max-width: 360px; }
-    .home #text-home { width: 75%; text-align: center; }
+    .home #text-home { width: 80%; text-align: center; }
     .home button { display: none; }
     .about .card { flex-direction: column; }
     .about .card .bcg { width: 100%; }
@@ -575,24 +575,32 @@ header > nav a:active {
     .blob { transform: scale(2); }
 }
 
-@media screen and (max-width : 640px) {
-    h1 { font-size: 30px; }
+@media only screen and (max-width : 640px) {
+    h1 { font-size: 28px; }
     h2 { font-size: 26px; }
     h3 { font-size: 19px;}
     p { font-size: 16px; }
-    header { display: inline-block; padding-top: 80px; }
+    header { display: inline-block; padding-top: 80px; background: var(--lightpink);}
     header > a  { position: absolute; top: 20px; left: 8vw;}
     #nav-toggle { display: block; }
     .nav-links { visibility: hidden; opacity: 0; height: 0; }
     .nav-links li { margin: 25px auto; text-align: center; display: block; }
     .section { padding: 80px 4vw 0 4vw; }
-    .home { padding-top: 200px; flex-direction: column-reverse; align-items: center; justify-content: space-between; }
+    .home { flex-direction: column-reverse; align-items: center; overflow: hidden;}
+    .home > .blob.three { top: 80px; right: 0; transform: scale(2.5); } .home > .blob.two { bottom: 0; transform: scale(2.5); }
+    .projects > .blob.five { transform: scale(5); } .projects > .blob.six { transform: scale(5); bottom: 30%; left: 20%; }
     .home > #me-home { max-width: 300px; }
-    .home #text-home { width: 75%; text-align: center; }
+    .home #text-home { width: 80%; text-align: center; }
     .home button { display: none; }
     .about .card { flex-direction: column; }
     .about .card .bcg { width: 100%; }
     .about .card .icon { width: 100%; min-height: 80px;}
+}
+
+@media only screen and (max-height: 604px) {
+    h1 { font-size: 26px; }
+    .home > #me-home { max-width: 250px; }
+    .home #text-home p { margin: 10px 0; }
 }
 
 .active {
