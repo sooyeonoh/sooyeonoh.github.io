@@ -23,7 +23,7 @@ section.addEventListener('click', event => {
 
 link.forEach(item => {
     item.addEventListener('click', event => {
-        if (navLinks.classList.contains('active')) {
+        if (!navLinks.classList.contains('active')) {
             navLinks.classList.toggle('active');
             slidePanelUp();
         }
