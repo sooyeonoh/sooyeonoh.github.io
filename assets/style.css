@@ -586,8 +586,8 @@ header > nav a:active {
     .nav-links { visibility: hidden; opacity: 0; height: 0; }
     .nav-links li { margin: 25px auto; text-align: center; display: block; }
     .section { padding: 80px 4vw 0 4vw; }
-    .home { padding-top: 150px; flex-direction: column-reverse; align-items: center; justify-content: space-between; }
-    .home > #me-home { max-width: 320px; }
+    .home { padding-top: 200px; flex-direction: column-reverse; align-items: center; justify-content: space-between; }
+    .home > #me-home { max-width: 300px; }
     .home #text-home { width: 75%; text-align: center; }
     .home button { display: none; }
     .about .card { flex-direction: column; }
