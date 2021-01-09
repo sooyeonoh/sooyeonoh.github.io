@@ -23,8 +23,10 @@ section.addEventListener('click', event => {
 
 link.forEach(item => {
     item.addEventListener('click', event => {
-        navLinks.classList.toggle('active');
-        slidePanelUp();
+        if (navLinks.classList.contains('active')) {
+            navLinks.classList.toggle('active');
+            slidePanelUp();
+        }
     })
 });
 
