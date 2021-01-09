@@ -1,27 +1,30 @@
-(function() {
-    scrollTo();
-})();
+let panel = document.querySelector('#sliding-panel');
+let navLinks = document.querySelector('.nav-links');
+let navBarToggle = document.querySelector('#nav-toggle');
 
-function scrollTo() {
-    const links = document.querySelectorAll('.nav-link');
-    links.forEach(each => (each.onclick = scrollAnchors));
+navBarToggle.addEventListener('click', function () {
+    navLinks.classList.toggle('active');
+    if (navLinks.classList.contains('active')) {
+        slidePanelDown();
+    }
+    else {
+        slidePanelUp();
+    }
+});
+
+let section = document.querySelectorAll('.section');
+
+section.addEventListener('click', function () {
+    if (navLinks.classList.contains('active')) {
+        navLinks.classList.toggle('active');
+        slidePanelUp();
+    }
+});
+
+function slidePanelDown() {
+    panel.style.top = '0';
 }
 
-function scrollAnchors(e, respond = null) {
-    const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
-    e.preventDefault();
-    var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
-    const targetAnchor = document.querySelector(targetID);
-    if (!targetAnchor) return;
-    const originalTop = distanceToTop(targetAnchor);
-    window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
-    const checkIfDone = setInterval(function() {
-        const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
-        if (distanceToTop(targetAnchor) === 0 || atBottom) {
-            targetAnchor.tabIndex = '-1';
-            targetAnchor.focus();
-            window.history.pushState('', '', targetID);
-            clearInterval(checkIfDone);
-        }
-    }, 100);
+function slidePanelUp() {
+    panel.style.top = '-170px';
 }
