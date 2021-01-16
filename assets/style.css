@@ -173,13 +173,13 @@ header > nav a:active {
 }
 
 .home > #me-home {
-    animation: fadeInLeft 2.8s ease-in-out 0s 1;
+    animation: fadeInLeft 2.7s ease-in-out 0.9s 1;
     z-index: 1;
 }
 
 .home #text-home {
     right: 0;
-    animation: fadeInUp 2.2s ease-in-out 0s 1;
+    animation: fadeInUp 2.5s ease-in-out 0s 1;
     z-index: 1;
 }
 
@@ -240,7 +240,8 @@ header > nav a:active {
 }
 
 .about .title-about {
-    padding-bottom: 5vh;
+    text-align: center;
+    padding: 5vh 0;
     z-index: 1;
     position: relative;
 }
@@ -320,7 +321,8 @@ header > nav a:active {
 }
 
 .projects > .title-projects {
-    padding-bottom: 5vh;
+    text-align: center;
+    padding: 5vh 0;
     z-index: 1;
     position: relative;
 }
@@ -348,7 +350,7 @@ header > nav a:active {
 .projects #cards {
     position: relative;
     top: 0;
-    margin-bottom: 4vh;
+    margin-bottom: 10vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -358,8 +360,8 @@ header > nav a:active {
 .projects .card {
     margin: 0.8em;
     max-width: 350px;
-    min-height: 160px;
-    max-height: 200px;
+    min-height: 250px;
+    max-height: 300px;
     position: relative;
     transition: transform 0.5s ease;
     border-radius: 5px;
@@ -386,8 +388,8 @@ header > nav a:active {
     display: block;
     opacity: 0.3;
     width: 100%;
-    min-height: 160px;
-    max-height: 200px;
+    min-height: 250px;
+    max-height: 300px;
     border-radius: 5px;
     object-fit: cover;
 }
@@ -436,6 +438,8 @@ header > nav a:active {
     align-items: center;
 }
 
+.contact .title-contact { text-align: center; }
+
 .contact #buttons {
     margin: 1em;
     display: flex;
@@ -444,8 +448,8 @@ header > nav a:active {
 }
 
 .contact #buttons a {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     background-color: var(--blue);
     border: none;
     border-radius: 100px;
@@ -457,7 +461,7 @@ header > nav a:active {
 }
 
 .contact #buttons img {
-    max-width: 30px;
+    max-width: 25px;
     filter: invert(100%);
 }
 
