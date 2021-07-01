@@ -1,0 +1,56 @@
+.header-wrapper {
+    width: 70vw;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.dot {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.dot-blue {
+    top: 35%;
+    right: 15%;
+    height: 15vw;
+    width: 15vw;
+    background-color: #0057d9;
+    z-index: -99;
+}
+
+.dot-yellow {
+    top: -15%;
+    right: 15%;
+    height: 35vw;
+    width: 35vw;
+    background-color: #ffb535;
+    z-index: -100;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.description {
+  width: 45%;
+  overflow: hidden;
+}
+
+.heading-wrapper {
+    margin: 1.5vh 0 2vh 0;
+}
+
+.button {
+    margin: 5vh 0;
+    padding: 1rem 1.5rem;
+    border-radius: 25px;
+}
