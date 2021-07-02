@@ -7,10 +7,10 @@ function Footer(props) {
             <div className="credits">
                 <p>Made with
                     <span role="img" aria-label="Emoji"> &nbsp; ❤ &nbsp; </span>
-                    by Sooyeon Oh.
+                    by Sooyeon Oh
                 </p>
             </div>
-            <p>Inspired by Brittany Chiang & Chetan Verma.</p>
+            <p>Built using React.</p>
         </div>
     );
 }

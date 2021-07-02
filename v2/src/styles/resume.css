@@ -1,0 +1,87 @@
+.resume-wrapper {
+    padding-top: 15vh;
+    text-align: left;
+    width: 70vw;
+}
+
+.resume-wrapper h1 {
+    font-size: 2.5rem;
+    border-bottom: 1px solid lightgray;
+    line-height: 0.1em;
+    margin-bottom: 4vh;
+    text-align: left;
+    width: 100%;
+}
+
+.resume-wrapper h1 span {
+    background: #FFF;
+    padding-right: 50px; 
+    z-index: -100;
+}
+
+.legend {
+    list-style: none;
+    text-align: right;
+    margin-bottom: 5vh;
+}
+
+.legend li {
+    margin: 0 0 0.5rem 0;
+    font-size: 14px;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.skills-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-grid {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    justify-items: center;
+    margin-bottom: 5vh;
+}
+
+.skill {
+    width: 10vw;
+    height: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.skill img {
+    height: 2.5rem;
+    margin: 1rem;
+}
+
+.skill .dot {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+}
+
+.skill .dot-blue {
+    border: 1.5px solid #007bff;
+}
+
+.skill .dot-yellow {
+    border: 1.5px solid #ffc107;
+}
+
+.skill .dot-red {
+    border: 1.5px solid #dc3545;
+}

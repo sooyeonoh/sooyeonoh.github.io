@@ -1,6 +1,6 @@
 .header-wrapper {
     width: 70vw;
-    margin-top: 15vh;
+    padding-top: 15vh;
     margin-bottom: 15vh;
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@
     right: 15%;
     height: 15vw;
     width: 15vw;
-    background-color: #0057d9;
+    background-color: #007bff;
     z-index: -99;
 }
 
@@ -27,7 +27,7 @@
     right: 15%;
     height: 35vw;
     width: 35vw;
-    background-color: #ffb535;
+    background-color: #ffc107;
     z-index: -100;
 }
 

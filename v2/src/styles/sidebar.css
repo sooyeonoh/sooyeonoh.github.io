@@ -9,14 +9,15 @@
     padding: 0;
 }
 
-li {
-    margin: 1rem 0;
+.sidebar li {
+    margin: 1.5rem 0;
 }
 
-.vertical-line {
+.sidebar .vertical-line {
     border-left: 1.8px solid black;
     height: 250px;
     position: absolute;
+    margin-top: 1rem;
     left: 50%;
     z-index: 1;
 }
