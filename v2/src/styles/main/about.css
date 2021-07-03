@@ -103,7 +103,7 @@ p span {
         margin-bottom: 0;
     }
 
-    h1 span {
+    .about-wrapper h1 span {
         font-size: 26px;
         padding: 0;
     }
