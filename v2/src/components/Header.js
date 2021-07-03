@@ -1,15 +1,15 @@
 import React from 'react';
-import '../styles/header.css';
+import '../styles/main/header.css';
 import Button from 'react-bootstrap/Button';
 import Fade from "react-reveal/Fade";
 
 function Header(props) {
     return (
-      <div className="section" id="home">
+      <div id="home" style={{width: '100vw'}}>
         <span class="dot dot-yellow"></span>
         <span class="dot dot-blue"></span>
         <Fade bottom>
-          <div className="container header-wrapper">
+          <div className="container-fluid header-wrapper">
               <h2>
                 Hi, I'm Sooyeon
                 <span role="img" aria-label="Emoji">

@@ -1,6 +1,6 @@
 import React from 'react';
 import Fade from "react-reveal/Fade";
-import '../styles/about.css';
+import '../styles/main/about.css';
 
 function About(props) {
     return (

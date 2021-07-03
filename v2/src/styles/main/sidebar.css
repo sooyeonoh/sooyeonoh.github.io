@@ -2,6 +2,7 @@
     position: fixed;
     left: 5vw;
     bottom: 200px;
+    z-index: 100;
 }
 
 .social-icons {
@@ -20,4 +21,10 @@
     margin-top: 1rem;
     left: 50%;
     z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
 }

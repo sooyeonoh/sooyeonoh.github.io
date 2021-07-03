@@ -2,7 +2,7 @@ import React from 'react';
 import Fade from "react-reveal/Fade";
 import Card from './Card';
 import { Button } from 'react-bootstrap';
-import '../styles/work.css';
+import '../styles/main/work.css';
 
 function Work(props) {
     return (
