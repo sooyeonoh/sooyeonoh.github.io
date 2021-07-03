@@ -1,0 +1,211 @@
+.resume-wrapper {
+    padding-top: 15vh;
+    text-align: left;
+    width: 70vw;
+}
+
+.resume-wrapper h1 {
+    font-size: 2.5rem;
+    border-bottom: 1px solid lightgray;
+    line-height: 0.1em;
+    margin-bottom: 4vh;
+    text-align: left;
+    width: 100%;
+}
+
+.resume-wrapper h1 span {
+    background: #FFF;
+    padding-right: 50px; 
+    z-index: -100;
+}
+
+#legend {
+    list-style: none;
+    text-align: right;
+    margin-bottom: 5vh;
+    padding: 0;
+}
+
+#legend-inline {
+    display: none;
+}
+
+.legend li {
+    margin: 0 0 0.5rem 0;
+    font-size: 14px;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.skills-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-grid {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+    justify-items: center;
+    margin-bottom: 5vh;
+}
+
+.skill {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.skill img {
+    height: 2.5rem;
+    margin: 1rem;
+}
+
+.skill .dot {
+    position: absolute;
+    width: 9vw;
+    height: 9vw;
+    min-height: 120px;
+    min-width: 120px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+}
+
+.skill .dot-blue {
+    border: 1.5px solid #007bff;
+}
+
+.skill .dot-yellow {
+    border: 1.5px solid #ffc107;
+}
+
+.skill .dot-red {
+    border: 1.5px solid #dc3545;
+}
+
+
+@media screen and (max-width: 480px) {
+    h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .resume-wrapper h1 {
+        border-bottom: none;
+        line-height: 1em;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .resume-wrapper h1 span {
+        font-size: 26px;
+        padding: 0;
+    }
+
+    .resume-wrapper {
+        width: 90vw;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    #legend {
+        text-align: center;
+    }
+
+    .skills-grid {
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 120px;
+        grid-gap: 15px;
+        width: 100%;
+    }
+
+    .skill .dot {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        background-color: transparent;
+    }
+
+    .skill {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    h3 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .resume-wrapper h1 {
+        border-bottom: none;
+        line-height: 1em;
+        margin-bottom: 20px;
+        margin-right: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .resume-wrapper h1 span {
+        font-size: 26px;
+    }
+
+    .resume-wrapper {
+        width: 90vw;
+        margin-bottom: 50px;
+    }
+
+    #legend {
+        display: none;
+    }
+
+    #legend-inline {
+        display: inline-block;
+        list-style: none;
+        text-align: right;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 0;
+    }
+
+    #legend-inline li {
+        line-height: 1.5em;
+    }
+
+    .skills-grid {
+        justify-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 120px;
+        grid-gap: 15px;
+        width: 100%;
+    }
+
+    .skill .dot {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        background-color: transparent;
+    }
+
+    .skill {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+}

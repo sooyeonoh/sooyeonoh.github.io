@@ -1,0 +1,30 @@
+.sidebar {
+    position: fixed;
+    left: 5vw;
+    bottom: 200px;
+    z-index: 100;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 1.5rem 0;
+}
+
+.sidebar .vertical-line {
+    border-left: 1.8px solid black;
+    height: 250px;
+    position: absolute;
+    margin-top: 1rem;
+    left: 50%;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}

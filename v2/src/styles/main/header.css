@@ -1,0 +1,128 @@
+.header-wrapper {
+    width: 70vw;
+    padding: 15vh 0 0 0;
+    margin-bottom: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.dot {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.dot-blue {
+    top: 35vh;
+    right: 15vw;
+    height: 15vw;
+    width: 15vw;
+    background-color: #007bff;
+    z-index: -99;
+}
+
+.dot-yellow {
+    top: -15vh;
+    height: 35vw;
+    width: 35vw;
+    background-color: #ffc107;
+    z-index: -100;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.description {
+  width: 45%;
+  overflow: hidden;
+}
+
+.heading-wrapper {
+    margin: 1.5vh 0 2vh 0;
+}
+
+.button {
+    margin: 5vh 0;
+    padding: 1rem 1.5rem;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .container-fluid {
+        width: 80vw;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .dot-yellow{
+        width: 200px;
+        height: 200px;
+        top: 100px;
+        left: -20px;
+    }
+
+    .dot-blue{
+        width: 100px;
+        height: 100px;
+        top: 330px;
+        right: 20px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .container-fluid {
+        width: 80vw;
+    }
+
+    .description {
+        width: 85%;
+    }
+
+    .dot-yellow{
+        width: 250px;
+        height: 250px;
+        top: 100px;
+        left: -20px;
+    }
+
+    .dot-blue{
+        width: 180px;
+        height: 180px;
+        top: 300px;
+        right: 20px;
+    }
+}
