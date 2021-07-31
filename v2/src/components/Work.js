@@ -18,15 +18,15 @@ function Work(props) {
                     <div className="grid">
                     <Card
                             heading="LiveTogether"
-                            paragraph="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                        Lorem Ipsum has been the industry's standard dummy text."
-                            imgSrc="/images/maps.png"
-                            projectLink=""
+                            paragraph="Web application that provides a centralized platform for housemates to interact 
+                                        and reduce conflicts. Task assignment and grocery list building are some features."
+                            imgSrc="/images/livetogether.png"
+                            projectLink="https://github.com/sooyeonoh/LiveTogether"
                             color="#b4cfa3"
                             font="white"
                             button={
                                 <Button style={{ width: '150px'}} className="card-btn" variant="outline-light" target="_blank" >
-                                    COMING SOON
+                                    EXPLORE
                                 </Button>
                             }
                             className="project code-card"
@@ -138,19 +138,6 @@ function Work(props) {
                             }
                             className="project design-card"
                         />
-                        
-                        {/* {data.designprojects.map((project, index) => (
-                            <Card
-                            key={index}
-                            heading={project.title}
-                            paragraph={project.para}
-                            imgSrc={project.imageSrc}
-                            projectLink=""
-                            className="project design-card"
-                            color={project.color}
-                            font={project.fontColor}
-                            />
-                        ))} */}
                     </div>
                 </Fade>
             </div>
