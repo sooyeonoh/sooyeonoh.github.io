@@ -29,7 +29,7 @@ function About(props) {
                                 <span role="img" aria-label="Emoji" style={{fontSize: "24px"}}>
                                     📍 &nbsp;
                                 </span>
-                                <span style={{fontWeight: "bold", color: "#007bff"}}>Product Engineering Intern,</span> Thermo Fisher Scientific
+                                <span style={{fontWeight: "bold", color: "#007bff"}}>Product Software Engineering Intern,</span> Thermo Fisher Scientific
                             </p> 
                             <p>
                                 <span role="img" aria-label="Emoji" style={{fontSize: "24px"}}>
