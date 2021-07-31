@@ -66,7 +66,7 @@
     margin: 0;
 }
 
-button:hover {
+.navbar-wrapper button:hover {
     opacity: 1;
     font-weight: bold;
 }
