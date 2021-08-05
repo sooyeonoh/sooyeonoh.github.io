@@ -61,6 +61,7 @@ span#design-title {
     border: none;
     min-width: 350px;
     max-height: 350px;
+    width: 100%;
 }
 
 .project:hover .content {
