@@ -26,7 +26,7 @@ function Resume(props) {
                 </ul>
             </Fade>
             <Skills />
-            <a className="center" href="Resume.pdf" target="_blank" style={{textDecoration: 'none'}}>
+            <a className="center" href="sooyeonoh.github.io/v2/Resume.pdf" target="_blank" style={{textDecoration: 'none'}}>
                 <Button className="button" variant="dark">
                     SEE RESUME
                 </Button>
