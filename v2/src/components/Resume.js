@@ -2,6 +2,7 @@ import React from 'react';
 import Fade from "react-reveal/Fade";
 import { Button } from 'react-bootstrap';
 import Skills from './Skills';
+import Pdf from '../Resume.pdf';
 import '../styles/main/resume.css';
 
 function Resume(props) {
@@ -26,7 +27,8 @@ function Resume(props) {
                 </ul>
             </Fade>
             <Skills />
-            <a className="center" href="/Resume.pdf" target="_blank" style={{textDecoration: 'none'}}>
+
+            <a className="center" href={Pdf} target="_blank" style={{textDecoration: 'none'}}>
                 <Button className="button" variant="dark">
                     SEE RESUME
                 </Button>

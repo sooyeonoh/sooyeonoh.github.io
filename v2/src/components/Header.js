@@ -20,7 +20,7 @@ function Header(props) {
                 <h1>I want to make things</h1>
                 <h1>that make a difference.</h1>
               </div>
-              <p className="description">I'm a current junior at UC Berkeley studying Computer Science. 
+              <p className="description">I'm a junior at UC Berkeley studying Computer Science. 
                   I'm passionate about tech, design, and everything in between.</p>
               <a href="https://www.linkedin.com/in/sooyeonoh/" target="_blank" rel="noreferrer">
                 <Button className="button" variant="outline-danger">
