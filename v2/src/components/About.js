@@ -24,7 +24,7 @@ function About(props) {
                             I rewind by watching trashy reality TV, painting, or curating Pinterest boards. 
                         </p>
                         <div className="current-text">
-                            <h2>Currently a...</h2>
+                            <h2>Most recently...</h2>
                             <p>
                                 <span role="img" aria-label="Emoji" style={{fontSize: "24px"}}>
                                     📍 &nbsp;

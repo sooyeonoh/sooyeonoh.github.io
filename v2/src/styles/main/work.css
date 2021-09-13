@@ -50,6 +50,7 @@ span#design-title {
     grid-gap: 1.8rem;
     justify-items: center;
     grid-auto-rows: 40vh;
+    width: 100%;
 }
 
 .project {
