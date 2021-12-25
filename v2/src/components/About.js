@@ -23,7 +23,7 @@ function About(props) {
                             and lofi music<span role="img" aria-label="Emoji">&nbsp; 🎵 &nbsp;</span></span> 
                             I rewind by watching trashy reality TV, painting, or curating Pinterest boards. 
                         </p>
-                        <div className="current-text">
+                        {/* <div className="current-text">
                             <h2>Most recently...</h2>
                             <p>
                                 <span role="img" aria-label="Emoji" style={{fontSize: "24px"}}>
@@ -37,13 +37,14 @@ function About(props) {
                                 </span>
                                 <span style={{fontWeight: "bold", color: "#007bff"}}>Computer Science Fellow,</span> Edlyft
                             </p> 
-                        </div>
-                        <p style={{fontSize: "18px"}}>
+                        </div> */}
+                        <h2>
                             Scroll down 
                                 <span role="img" aria-label="Emoji" style={{fontSize: "24px"}}>
                                 &nbsp; 👇🏻 &nbsp;
                                 </span>
-                            to see what I do!</p>
+                            to see what I do!
+                        </h2>
                         
                     </div>
                 </Fade>
@@ -51,7 +52,7 @@ function About(props) {
                     <div className="dot image-container" >
                         <img src="/images/me.png" width="430" height="auto" alt="Me"/>
                     </div>
-                    <span class="dot dot-yellow"></span>
+                    <span className="dot dot-yellow"></span>
                 </div>
             </div>
         </div>

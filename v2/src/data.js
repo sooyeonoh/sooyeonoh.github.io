@@ -1,16 +1,68 @@
-// Skills Icons
-
 var data = {
+
+  // Work Section --------------------------
+
+    workData: [
+      {
+          title: 'Incoming Software Engineering Intern',
+          company: 'MongoDB',
+          season: 'summer',
+          year: '2022',
+          points: [
+          ],
+          color: '#007bff',
+      },
+
+      {
+          title: 'Incoming Software Engineering Intern',
+          company: 'Lyft',
+          season: 'winter',
+          year: '2022',
+          points: [
+              'Pay Processing Team'
+          ],
+          color: '#ffc107',
+      },
+
+      {
+          title: 'Software Engineering Intern',
+          company: 'Thermo Fisher Scientific',
+          season: 'summer',
+          year: '2021',
+          points: [
+              'Developed a web application that connects to a camera and performs live cell detection on the browser using deep learning',
+              'Improved image rendering speed 4-5x by using optimization techniques such as multithreading',
+              'Presented proof of concept of using Blazor as a framework'
+          ],
+          color: '#dc3545'
+      },
+      {
+          title: 'Computer Science Fellow',
+          company: 'Edlyft',
+          season: 'summer',
+          year: '2021',
+          points: [
+              'Led conceptual review and exam prep sessions for UC Berkeley students taking Machine Structures course',
+              'Developed frontend components for student portal website using React',
+              'Face bi-weekly performance reviews and effectively incorporated critiques from team'
+          ],
+          color: '#007bff'
+      }
+  ],
+
+  // Projects Section --------------------------
 
   codeprojects: [
     {
       title: "LiveTogether",
       para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+      "Web application that provides a centralized platform for housemates to interact and reduce conflicts. Task assignment and grocery list building are some features.",
       imageSrc:
-        "/images/maps.png",
-      url: "/",
-      color: "#b4cfa3"
+      "/images/livetogether.png",
+      url: "https://github.com/sooyeonoh/LiveTogether",
+      color: "#b4cfa3",
+      fontColor: "white",
+      buttonColor: "outline-light"
     },
     {
       title: "Dungeon Escape",
@@ -19,7 +71,9 @@ var data = {
       imageSrc:
         "/images/dungeon.png",
       url: "https://gitlab.com/sooyeonoh/worldgeneration",
-      color: "#8092b0"
+      color: "#8092b0",
+      fontColor: "white",
+      buttonColor: "outline-light"
     },
     {
       title: "Bear Maps",
@@ -29,7 +83,8 @@ var data = {
         "/images/maps.png",
       url: "https://gitlab.com/sooyeonoh/bearmaps",
       color: "#fff0e4",
-      fontColor: "black"
+      fontColor: "black",
+      buttonColor: "outline-dark"
     },
     {
       title: "NBody Simulation",
@@ -38,7 +93,9 @@ var data = {
       imageSrc:
         "/images/nbody.png",
       url: "https://github.com/Berkeley-CS61B-Student/fa20-s515/tree/master/proj0",
-      color: "#080841"
+      color: "#080841",
+      fontColor: "white",
+      buttonColor: "outline-light"
     }
   ],
 
@@ -50,6 +107,8 @@ var data = {
       imageSrc:
         "/images/launch.png",
       color: "#394ea9",
+      fontColor: "white",
+      explore: false
     },
     {
       title: "King Pin Donuts",
@@ -58,7 +117,8 @@ var data = {
       imageSrc:
         "/images/donuts.png",
       color: "#e4c3ab",
-      fontColor: "black"
+      fontColor: "white",
+      explore: false
     },
     {
       title: "Astroland",
@@ -67,7 +127,10 @@ var data = {
       imageSrc:
         "/images/astroland.png",
       url: "/",
-      color: "#243550"
+      color: "#243550",
+      fontColor: "white",
+      buttonColor: "outline-light",
+      explore: true
     },
     {
       title: "This Only Happens Once",
@@ -77,11 +140,13 @@ var data = {
         "/images/spread.png",
       url: "/",
       color: "#dfe0e2",
-      fontColor: "black"
+      fontColor: "black",
+      buttonColor: "outline-dark",
+      explore: true
     }
   ],
 
-  // Skills Section ---------------
+  // Skills Section --------------------------
 
   skills: {
         programming: [

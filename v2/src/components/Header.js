@@ -6,8 +6,8 @@ import Fade from "react-reveal/Fade";
 function Header(props) {
     return (
       <div id="home" style={{width: '100vw'}}>
-        <span class="dot dot-yellow"></span>
-        <span class="dot dot-blue"></span>
+        <span className="dot dot-yellow"></span>
+        <span className="dot dot-blue"></span>
         <Fade bottom>
           <div className="container-fluid header-wrapper">
               <h2>

@@ -1,6 +1,6 @@
 .header-wrapper {
     width: 70vw;
-    padding: 15vh 0 0 0;
+    padding: 19vh 0 0 0;
     margin-bottom: 15vh;
     display: flex;
     flex-direction: column;
@@ -14,18 +14,22 @@
 }
 
 .dot-blue {
-    top: 35vh;
+    top: 30vh;
     right: 15vw;
     height: 15vw;
     width: 15vw;
+    min-width: 180px;
+    min-height: 180px;
     background-color: #007bff;
     z-index: -99;
 }
 
 .dot-yellow {
-    top: -15vh;
+    top: -18vh;
     height: 35vw;
     width: 35vw;
+    min-height: 380px;
+    min-width: 380px;
     background-color: #ffc107;
     z-index: -100;
 }
@@ -55,6 +59,10 @@ h2 {
 }
 
 @media screen and (max-width: 480px) {
+    #home {
+        overflow: hidden;
+    }
+
     h1 {
         font-size: 26px;
     }
@@ -67,8 +75,12 @@ h2 {
         font-size: 16px;
     }
 
+    #sidenav {
+        margin-top: 0;
+    }
+
     .container-fluid {
-        width: 80vw;
+        width: 90vw;
     }
 
     .description {
@@ -76,17 +88,21 @@ h2 {
     }
 
     .dot-yellow{
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         top: 100px;
         left: -20px;
     }
 
     .dot-blue{
-        width: 100px;
-        height: 100px;
+        width: 140px;
+        height: 140px;
         top: 330px;
-        right: 20px;
+        right: -20px;
+    }
+
+    .button {
+        margin-top: 80px;
     }
 }
 
@@ -105,7 +121,7 @@ h2 {
     }
 
     .container-fluid {
-        width: 80vw;
+        width: 90vw;
     }
 
     .description {
@@ -113,16 +129,21 @@ h2 {
     }
 
     .dot-yellow{
-        width: 250px;
-        height: 250px;
         top: 100px;
-        left: -20px;
+        right: 40px;
     }
 
     .dot-blue{
-        width: 180px;
-        height: 180px;
-        top: 300px;
+        top: 350px;
         right: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
+    .dot-yellow{
+        width: 500px;
+        height: 500px;
+        top: -30px;
+        right: 120px;
     }
 }

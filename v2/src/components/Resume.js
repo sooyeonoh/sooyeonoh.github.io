@@ -11,7 +11,7 @@ function Resume(props) {
             <Fade bottom>
                 <h3>RESUME</h3>
                 <h1>
-                    <span>Here's my toolbelt.</span>
+                    <span>This is my toolbelt.</span>
                     <ul id="legend-inline">
                         <li style={{ color: "#007bff"}}>Programming</li>
                         <li style={{ color: "#ffc107" }}>Web</li>
@@ -28,7 +28,7 @@ function Resume(props) {
             </Fade>
             <Skills />
 
-            <a className="center" href={Pdf} target="_blank" style={{textDecoration: 'none'}}>
+            <a className="center" href={Pdf} target="_blank" style={{textDecoration: 'none'}} rel="noreferrer">
                 <Button className="button" variant="dark">
                     SEE RESUME
                 </Button>

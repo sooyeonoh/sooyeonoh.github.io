@@ -3,6 +3,7 @@ import './styles/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Header from './components/Header';
+import Projects from './components/Projects';
 import Work from './components/Work';
 import About from './components/About';
 import Resume from './components/Resume';
@@ -18,6 +19,7 @@ function App() {
       <Header />
       <About />
       <Work />
+      <Projects />
       <Resume />
       <Footer />
     </div>

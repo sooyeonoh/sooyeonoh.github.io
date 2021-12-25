@@ -1,24 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import '../styles/main/navbar.css';
 
 function NavBar(props) {
 
-  function toggleNav() {
-    var nav = document.getElementById('navlinks-wrapper');
-    var background = document.getElementById('background');
-    if (nav.style.top === "-100vh") {
-      nav.style.top = "0";
-      //background.style.display = 'block';
+  window.onscroll = () => scrollFunction();
+
+  const [lastScrollTop, setLastScroll] = useState(window.pageYOffset || document.documentElement.scrollTop);
+
+  function scrollFunction() {
+    var st = window.pageYOffset || document.documentElement.scrollTop;
+    var nav = document.getElementById("navbar-wrapper");
+    if (st > lastScrollTop) {
+      nav.style.top = "-13vh";
     } else {
-      nav.style.top = "-100vh";
-      //background.style.display = 'none';
+      nav.style.top = "0";
+    }
+    setLastScroll(st <= 0 ? window.pageYOffset || document.documentElement.scrollTop : st)
+  }
+
+  function toggleNav() {
+    console.log("clicked");
+    var links = document.getElementById('navlinks-wrapper');
+    var background = document.getElementById("navlinks-background");
+    if (links.style.top === "-100vh") {
+      background.style.top = "0";
+      links.style.top = "0";
+    } else {
+      background.style.top = "-280px";
+      links.style.top = "-100vh";
     }
   }
 
     return (
-        <nav className="container-fluid navbar-wrapper">
-
+        <nav id="navbar-wrapper" className="container-fluid">
           <div id="navbar-name" role="button" onClick={() => scrollTo("#home")}>
             Sooyeon Oh.
           </div>
@@ -36,9 +51,13 @@ function NavBar(props) {
                 <li>
                 <button onClick={() => scrollTo("#about")}><p>About</p></button>
                 </li>
+
+                <li>
+                <button onClick={() => scrollTo("#work")}><p>Work</p></button>
+                </li>
                 
                 <li>
-                  <button onClick={() => scrollTo("#work")}><p>Work</p></button>
+                  <button onClick={() => scrollTo("#projects")}><p>Projects</p></button>
                 </li>
                   
                 <li>
@@ -46,7 +65,8 @@ function NavBar(props) {
                 </li>
               </ul>
             </div>
-            {/* <div id="background" style={{ backgroundColor: 'white' }}></div> */}
+          </div>
+          <div id='navlinks-background'>
           </div>
         </nav>
     );

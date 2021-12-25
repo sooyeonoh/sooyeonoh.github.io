@@ -33,6 +33,15 @@ h3 {
 .content-text {
     text-align: left;
     width: 30vw;
+    padding-top: 3vh;
+}
+
+.content-text p {
+    font-size: 17px;
+}
+
+.content-text h2 {
+    margin-top: 2rem;
 }
 
 .about-wrapper .dot {
@@ -43,15 +52,17 @@ h3 {
 
 .dots-container {
     position: relative;
+    margin-top: -3vh;
+    left: -4vw;
 }
 
 .image-container {
     overflow: hidden;
     width: 28vw;
     height: 28vw;
-    margin-top: -3vh;
-    margin-right: 2vw;
-    position: absolute;
+    min-width: 300px;
+    min-height: 300px;
+    left: -2rem;
 }
 
 .image-container img {
@@ -64,6 +75,8 @@ h3 {
 .about-wrapper .dot-yellow {
     height: 12vw;
     width: 12vw;
+    min-height: 100px;
+    min-width: 100px;
     background-color: #ffc107;
     z-index: -1;
     right: -2vw;
@@ -110,9 +123,15 @@ p span {
 
     .image-container {
         overflow: hidden;
-        width: 250px;
-        height: 250px;
-        margin: 20px 0;
+        width: 300px;
+        height: 300px;
+        margin: 40px 0;
+        left: 0;
+    }
+
+    .dots-container {
+        left: 0;
+        margin-top: 0;
     }
 
     .dots-container .dot-yellow {
@@ -131,6 +150,10 @@ p span {
         width: 90vw;
     }
 
+    .content-text p {
+        font-size: 16px;
+    }
+
     .current-text {
         display: flex;
         width: 90vw;
@@ -143,7 +166,7 @@ p span {
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 924px) {
 
     .about-wrapper h1 {
         border-bottom: none;
@@ -161,6 +184,12 @@ p span {
         width: 300px;
         height: 300px;
         margin: 40px 0;
+        left: 0;
+    }
+
+    .dots-container {
+        left: 0;
+        margin-top: 0;
     }
 
     .dots-container .dot-yellow {
@@ -194,8 +223,28 @@ p span {
 }
 
 @media screen and (min-height: 1024px) and (max-width: 1024px) {
+
+    .about-wrapper h1 {
+        margin-bottom: 10vh;
+    }
     
     .about-wrapper h1 span {
         font-size: 38px;
+    }
+
+    .dots-container {
+        left: 0;
+    }
+
+    .about-wrapper .dot-yellow {
+        top: 200px;
+    }
+
+    .content-wrapper {
+        align-items: center;
+    }
+
+    .content-text {
+        padding-top: 0;
     }
 }
