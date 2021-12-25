@@ -58,7 +58,7 @@ function Projects(props) {
                             button= {item.explore && 
                                 <a href={item.url} target="_blank" rel="noreferrer">
                                     <Button style={{ width: '150px'}} className="card-btn" variant={item.buttonColor} >
-                                        EXPLORE
+                                        SEE GITHUB
                                     </Button>
                                 </a>
                             }

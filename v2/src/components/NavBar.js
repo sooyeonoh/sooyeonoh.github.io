@@ -53,7 +53,7 @@ function NavBar(props) {
                 </li>
 
                 <li>
-                <button onClick={() => scrollTo("#work")}><p>Work</p></button>
+                <button onClick={() => scrollTo("#work")}><p>Experience</p></button>
                 </li>
                 
                 <li>

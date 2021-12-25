@@ -7,7 +7,7 @@ function Work(props) {
     return (
         <div className="work-wrapper" id="work">
             <Fade bottom>
-                <h3>WORK</h3>
+                <h3>EXPERIENCE</h3>
                 <h1><span>Here's what I've been up to.</span></h1>
             </Fade>
             <Fade bottom cascade>
