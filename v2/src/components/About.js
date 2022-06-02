@@ -7,21 +7,25 @@ function About(props) {
         <div className="about-wrapper" id="about">
             <Fade bottom>
                 <h3>ABOUT</h3>
-                <h1><span>So...what makes me, me?</span></h1>
+                <h1><span>What makes me, me?</span></h1>
             </Fade>
             <div className="container content-wrapper">
                 <Fade bottom cascade>
                     <div className="content-text">
                         <p>
-                            I'm currently based in <span style={{fontWeight: "bold", color: "#dc3545"}}>Berkeley, CA</span> while I finish up my undergrad 
-                            degree in Computer Science. Previously, I've lived in Texas (yeehaw! <span role="img" aria-label="Emoji">🤠</span>), 
-                            Minnesota, and Seoul, South Korea.
+                            Hey! My name is Sooyeon and I enjoy building exciting things, frontend or backend.
+                            Currently, I'm based in the <span style={{fontWeight: "bold"}}>📍 Bay Area</span> while I 
+                            complete my Bachelor's in CS 💻 at UC Berkeley.
                         </p>
                         <p>
-                            During the day, you can spot me at a nearby cafe getting work done 
-                            with an <span style={{fontWeight: "bold"}}>oat milk latte <span role="img" aria-label="Emoji">&nbsp; ☕ &nbsp;</span>
-                            and lofi music<span role="img" aria-label="Emoji">&nbsp; 🎵 &nbsp;</span></span> 
-                            I rewind by watching trashy reality TV, painting, or curating Pinterest boards. 
+                            During my time in college, I've had the privilege of working in diverse contexts. My experiences range from
+                            <span style={{color: "#dc3545"}}> product engineering in biotech</span>, to 
+                            <span style={{color: "#dc3545"}}> SWE in big tech</span>, to 
+                            <span style={{color: "#dc3545"}}> mentoring CS students at an edtech startup</span>.
+                        </p>
+                        <p>
+                            Oh - and for funsies, I'm a <span style={{fontWeight: "bold"}}>BIG foodie 🍜</span> and run a food page on Instagram.  
+                            <a href='https://www.instagram.com/soosfoods/?hl=en'> Check it out here!</a> 
                         </p>
                         {/* <div className="current-text">
                             <h2>Most recently...</h2>

@@ -15,11 +15,10 @@ function Work(props) {
                     {(data.workData).map((item, index) => (
                         <div className="work" key={index}>
                             <div className="work-dot-container" style={{backgroundColor: item.color}}>
-                                {/* <span style={{backgroundColor: item.color}}></span> */}
                                 <p style={{position: 'absolute', color: 'white'}}><span style={{fontSize: '16px'}}>{item.year}</span><br></br>{item.season}</p>
                             </div>
                             <div className="work-text-container">
-                                <p style={{textTransform: 'uppercase', fontSize: '16px', color: item.color, fontWeight: '600', paddingBottom: '0.5rem'}}>{item.company}</p>
+                                <p style={{textTransform: 'uppercase', fontSize: '20px', color: item.color, fontWeight: '600', paddingBottom: '0.5rem'}}>{item.company}</p>
                                 <h4 style={{fontSize: '18px'}}>{item.title}</h4>
                                 <ul>
                                     {(item.points).map((p, index) => (

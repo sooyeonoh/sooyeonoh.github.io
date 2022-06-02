@@ -4,7 +4,7 @@ var data = {
 
     workData: [
       {
-          title: 'Incoming Software Engineering Intern',
+          title: 'Software Engineering Intern',
           company: 'MongoDB',
           season: 'summer',
           year: '2022',
@@ -14,13 +14,15 @@ var data = {
       },
 
       {
-          title: 'Incoming Software Engineering Intern',
+          title: 'Software Engineering Intern',
           company: 'Lyft',
           season: 'winter',
           year: '2022',
           points: [
-              'Pay Processing Team'
-          ],
+            'Built an end-to-end acceptance test for critical user flow processes',
+            'Designed a solution for optimizing refund failures with the goal to boost success rate for refunds by 40%',
+            'Utilized data visualization tools to debug and monitor performance'
+        ],
           color: '#ffc107',
       },
 
@@ -30,9 +32,9 @@ var data = {
           season: 'summer',
           year: '2021',
           points: [
-              'Developed a web application that connects to a camera and performs live cell detection on the browser using deep learning',
-              'Improved image rendering speed 4-5x by using optimization techniques such as multithreading',
-              'Presented proof of concept of using Blazor as a framework'
+              'Created a web app MVP that connects to a camera and performs live cell detection on the browser using deep learning',
+              'Improved image rendering speed 4-5x by using optimization techniques',
+              'Cloned an existing desktop app to a web app using Blazor as a proof of concept'
           ],
           color: '#dc3545'
       },
@@ -166,11 +168,6 @@ var data = {
                   "C",
               },
               {
-                img: "https://img.icons8.com/ios/50/000000/c-sharp-logo.png",
-                para:
-                  "C#",
-              },
-              {
                 img: "https://img.icons8.com/ios/50/000000/javascript--v1.png",
                 para:
                   "Javascript",
@@ -196,11 +193,6 @@ var data = {
                 img: "https://img.icons8.com/ios/50/000000/react-native--v1.png",
                 para:
                   "React",
-              },
-              {
-                img: "/images/blazor.svg",
-                para:
-                  "Blazor",
               },
           ],
           design: [
