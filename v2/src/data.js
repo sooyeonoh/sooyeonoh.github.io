@@ -9,6 +9,9 @@ var data = {
           season: 'summer',
           year: '2022',
           points: [
+            'Implemented features to increase database performance on slow queries',
+            'Developed process to detect invalid query operations for index suggestions',
+            'Added filter expression support for fine tuning metric and log ingestion on the cloud automation agent'
           ],
           color: '#007bff',
       },
@@ -20,7 +23,7 @@ var data = {
           year: '2022',
           points: [
             'Built an end-to-end acceptance test for critical user flow processes',
-            'Designed a solution for optimizing refund failures with the goal to boost success rate for refunds by 40%',
+            'Designed a solution for optimizing refund failures by 40%',
             'Utilized data visualization tools to debug and monitor performance'
         ],
           color: '#ffc107',
@@ -32,9 +35,9 @@ var data = {
           season: 'summer',
           year: '2021',
           points: [
-              'Created a web app MVP that connects to a camera and performs live cell detection on the browser using deep learning',
+              'Created a web app that connects to a camera and performs live cell detection using deep learning',
               'Improved image rendering speed 4-5x by using optimization techniques',
-              'Cloned an existing desktop app to a web app using Blazor as a proof of concept'
+              'Ported an existing desktop app to a web app using Blazor as a proof of concept'
           ],
           color: '#dc3545'
       },

@@ -56,7 +56,7 @@ function About(props) {
                     <div className="dot image-container" >
                         <img src="/images/me.png" width="430" height="auto" alt="Me"/>
                     </div>
-                    <span className="dot dot-yellow"></span>
+                    <div className="dot dot-yellow"></div>
                 </div>
             </div>
         </div>
